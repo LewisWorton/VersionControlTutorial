@@ -1,6 +1,7 @@
 //Code from first Codio task week 7
 package com.company;
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class Main
 {
@@ -8,11 +9,21 @@ public class Main
     {
         int fahrenheit = 88;
 
-        System.out.println("The temperature in degrees celsius is " + fahrenToCelcius(fahrenheit));
+        //System.out.println("The temperature in degrees celsius is " + fahrenToCelcius(fahrenheit));
+        displayTemp(fahrenToCelcius(fahrenheit));
+        System.out.print("°C\n");
 
         int celsius=34;
 
-        System.out.println("The temperature in degrees fahrenheit is " + celcToFahren(celsius));
+        //System.out.println("The temperature in degrees fahrenheit is " + celcToFahren(celsius));
+        displayTemp(celcToFahren(celsius));
+        System.out.print("°F");
+    }
+
+    public static void displayTemp(double temp)
+    {
+        DecimalFormat dp2 = new DecimalFormat("0.00");
+        System.out.print("The temperature is: " + dp2.format(temp));
     }
 
     /*public static void main(String[] args)
