@@ -7,13 +7,13 @@ public class Main
 {
     public static void main(String[] args)
     {
-        int fahrenheit = 88;
+        int fahrenheit = 88;    //initialises the fahrenheit value
 
         //System.out.println("The temperature in degrees celsius is " + fahrenToCelcius(fahrenheit));
         displayTemp(fahrenToCelcius(fahrenheit));
         System.out.print("°C\n");
 
-        int celsius=34;
+        int celsius=34;     //initialises the celsius value
 
         //System.out.println("The temperature in degrees fahrenheit is " + celcToFahren(celsius));
         displayTemp(celcToFahren(celsius));
