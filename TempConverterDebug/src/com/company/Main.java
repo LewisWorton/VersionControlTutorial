@@ -6,13 +6,13 @@ public class Main
 {
     public static void main(String[] args)
     {
-        int tempF = 88;
+        int fahrenheit = 88;
 
-        System.out.println("The temperature in degrees celsius is " + fahrenToCelcius(tempF));
+        System.out.println("The temperature in degrees celsius is " + fahrenToCelcius(fahrenheit));
 
-        int tempC=34;
+        int celsius=34;
 
-        System.out.println("The temperature in degrees fahrenheit is " + celcToFahren(tempC));
+        System.out.println("The temperature in degrees fahrenheit is " + celcToFahren(celsius));
     }
 
     /*public static void main(String[] args)
